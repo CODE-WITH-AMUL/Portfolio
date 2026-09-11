@@ -1,4 +1,4 @@
- // ========== UTILITIES ==========
+// ========== UTILITIES ==========
     function throttle(func, limit) {
       let inThrottle;
       return function(...args) {
@@ -471,3 +471,31 @@
         initGSAP();
       }
     }, 2000);
+// ========== MOBILE NAV TOGGLE ==========
+// Append this to the end of script.js — it's additive and doesn't touch existing hooks.
+(function () {
+  function initNavToggle() {
+    const toggle = document.getElementById('nav-toggle');
+    const nav = document.getElementById('primary-nav');
+    if (!toggle || !nav) return;
+
+    toggle.addEventListener('click', function () {
+      const isOpen = nav.classList.toggle('nav-open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    // Close menu after a nav link is tapped
+    nav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        nav.classList.remove('nav-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initNavToggle);
+  } else {
+    initNavToggle();
+  }
+})();

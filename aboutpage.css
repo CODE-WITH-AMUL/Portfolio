@@ -1,0 +1,169 @@
+/* =============================================================
+   ABOUT PAGE STYLING — matches index.html design system
+   Append to style.css (uses the same :root tokens already defined there)
+   ============================================================= */
+
+/* Header on the About page has no scroll-shrink JS binding, so keep it static-styled */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--sp-4) var(--sp-6);
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+main#main-content {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: var(--sp-8) var(--sp-5) var(--sp-9);
+  position: relative;
+  z-index: 2;
+}
+
+/* Breadcrumb */
+main#main-content > nav[aria-label="Breadcrumb"] {
+  font-size: 0.8125rem;
+  color: var(--color-fg-subtle);
+  margin-bottom: var(--sp-6);
+}
+main#main-content > nav[aria-label="Breadcrumb"] a {
+  color: var(--color-fg-muted);
+  text-decoration: none;
+}
+main#main-content > nav[aria-label="Breadcrumb"] a:hover {
+  color: var(--color-fg);
+}
+
+/* H1 + subtitle, same voice as the hero */
+main#main-content > h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: var(--lh-tight);
+  margin-bottom: var(--sp-2);
+}
+
+main#main-content > .hero-subtitle {
+  font-size: 1.0625rem;
+  color: var(--color-fg-muted);
+  margin-bottom: var(--sp-6);
+}
+
+/* Profile image */
+main#main-content > img {
+  border-radius: 50%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  width: 9rem;
+  border: 1px solid var(--color-border-strong);
+  margin-bottom: var(--sp-7);
+}
+
+/* Section rhythm — consistent with homepage sections but tighter, single column */
+main#main-content section {
+  margin-bottom: var(--sp-8);
+  padding-top: var(--sp-6);
+  border-top: 1px solid var(--color-border);
+}
+main#main-content section:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+main#main-content section h2 {
+  font-size: clamp(1.375rem, 3vw, 1.75rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: var(--sp-4);
+}
+
+main#main-content section h3 {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  margin-top: var(--sp-5);
+  margin-bottom: var(--sp-2);
+}
+main#main-content section h3:first-of-type { margin-top: 0; }
+
+main#main-content section p {
+  font-size: 1rem;
+  line-height: var(--lh-body);
+  color: var(--color-fg-muted);
+  margin-bottom: var(--sp-3);
+  max-width: 62ch;
+}
+
+main#main-content section ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-3);
+}
+
+main#main-content section li {
+  font-size: 0.9375rem;
+  color: var(--color-fg-muted);
+  line-height: 1.6;
+  padding-left: var(--sp-3);
+  position: relative;
+}
+main#main-content section li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
+
+main#main-content section a {
+  color: var(--color-fg);
+  text-decoration: underline;
+  text-decoration-color: var(--color-border-strong);
+  text-underline-offset: 3px;
+}
+main#main-content section a:hover {
+  text-decoration-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+/* Quick Facts block — give it a subtle raised card treatment to stand out */
+section[aria-label="Quick facts about Amul Sharma"] {
+  background: var(--color-bg-raised);
+  border: 1px solid var(--color-border);
+  border-top: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--sp-5) var(--sp-5) var(--sp-2);
+}
+
+/* FAQ section */
+section[aria-labelledby="faq-heading"] h3 {
+  color: var(--color-fg);
+}
+
+/* Footer reused from homepage styling automatically via shared selectors,
+   but this page has no .social-link class on its footer nav links — style them the same */
+footer .social-links a {
+  font-size: 0.875rem;
+  color: var(--color-fg-muted);
+  text-decoration: none;
+  transition: color var(--dur-fast) var(--ease);
+}
+footer .social-links a:hover {
+  color: var(--color-fg);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 640px) {
+  header { padding: var(--sp-3) var(--sp-4); }
+  main#main-content { padding: var(--sp-6) var(--sp-4) var(--sp-7); }
+}

@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>About Amul Sharma | Backend & AI Developer from Nepal</title>
+  <meta name="description"
+    content="Learn about Amul Sharma — a backend & AI developer from Nepal and BSc IT student at ISMT College. Background, skills, projects, and research.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.amulsharma.com.np/about-amul-sharma.html">
+  <link rel="icon" href="database/logo.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="aboutpage.css" />
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:title" content="About Amul Sharma | Backend & AI Developer from Nepal">
+  <meta property="og:description"
+    content="Background, skills and projects of Amul Sharma, a backend & AI developer from Nepal.">
+  <meta property="og:url" content="https://www.amulsharma.com.np/about-amul-sharma.html">
+  <meta property="og:type" content="profile">
+  <meta property="og:image" content="https://www.amulsharma.com.np/database/profile.jpg">
+  <meta property="og:site_name" content="Amul Sharma Portfolio">
+
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About Amul Sharma | Backend & AI Developer from Nepal">
+  <meta name="twitter:description"
+    content="Backend & AI developer from Nepal specializing in Python, Django and AI-powered applications.">
+  <meta name="twitter:image" content="https://www.amulsharma.com.np/database/profile.jpg">
+
+  <!-- GEO / LOCAL -->
+  <meta name="geo.region" content="NP">
+  <meta name="geo.placename" content="Nepal">
+  <meta name="language" content="English">
+  <meta name="author" content="Amul Sharma">
+
+<style>
+    /* =============================================================
+   aboutpage.css — About Amul Sharma
+   Uses shared design tokens defined globally (or fallbacks below)
+   ============================================================= */
+
+/* ---------- Fallback design tokens (if not already defined) ---------- */
+:root {
+  --color-bg: #0a0a0a;
+  --color-bg-raised: #111111;
+  --color-fg: #f5f5f5;
+  --color-fg-muted: #a3a3a3;
+  --color-fg-subtle: #6b6b6b;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-strong: rgba(255, 255, 255, 0.18);
+  --color-accent: #ff5c39;
+
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.25rem;
+  --sp-6: 1.5rem;
+  --sp-7: 2rem;
+  --sp-8: 3rem;
+  --sp-9: 5rem;
+
+  --radius-md: 10px;
+  --lh-tight: 1.15;
+  --lh-body: 1.7;
+
+  --dur-fast: 0.2s;
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ---------- Base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 16px;
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--color-fg);
+}
+
+/* ---------- Skip link ---------- */
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--color-fg);
+  color: var(--color-bg);
+  padding: var(--sp-2) var(--sp-4);
+  border-radius: var(--radius-md);
+  z-index: 1000;
+  text-decoration: none;
+  font-weight: 600;
+}
+.skip-to-content:focus {
+  left: var(--sp-4);
+  top: var(--sp-4);
+}
+
+/* =============================================================
+   HEADER
+   ============================================================= */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--sp-4) var(--sp-6);
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+header .logo {
+  font-weight: 700;
+  font-size: 0.9375rem;
+  letter-spacing: 0.08em;
+  color: var(--color-fg);
+  text-decoration: none;
+}
+
+header nav {
+  display: flex;
+  gap: var(--sp-5);
+}
+
+header nav a {
+  font-size: 0.8125rem;
+  letter-spacing: 0.06em;
+  color: var(--color-fg-muted);
+  text-decoration: none;
+  transition: color var(--dur-fast) var(--ease);
+}
+
+header nav a:hover,
+header nav a[aria-current="page"] {
+  color: var(--color-fg);
+}
+
+/* =============================================================
+   MAIN
+   ============================================================= */
+main#main-content {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: var(--sp-8) var(--sp-5) var(--sp-9);
+  position: relative;
+  z-index: 2;
+}
+
+/* Breadcrumb */
+main#main-content > nav[aria-label="Breadcrumb"] {
+  font-size: 0.8125rem;
+  color: var(--color-fg-subtle);
+  margin-bottom: var(--sp-6);
+}
+main#main-content > nav[aria-label="Breadcrumb"] a {
+  color: var(--color-fg-muted);
+  text-decoration: none;
+  transition: color var(--dur-fast) var(--ease);
+}
+main#main-content > nav[aria-label="Breadcrumb"] a:hover {
+  color: var(--color-fg);
+}
+
+/* Heading + subtitle */
+main#main-content > h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: var(--lh-tight);
+  margin: 0 0 var(--sp-2);
+}
+
+main#main-content > .hero-subtitle {
+  font-size: 1.0625rem;
+  color: var(--color-fg-muted);
+  margin: 0 0 var(--sp-6);
+}
+
+/* Profile image */
+main#main-content > img {
+  border-radius: 50%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  width: 9rem;
+  height: 9rem;
+  border: 1px solid var(--color-border-strong);
+  margin-bottom: var(--sp-7);
+  display: block;
+}
+
+/* Sections */
+main#main-content section {
+  margin-bottom: var(--sp-8);
+  padding-top: var(--sp-6);
+  border-top: 1px solid var(--color-border);
+}
+main#main-content section:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+main#main-content section h2 {
+  font-size: clamp(1.375rem, 3vw, 1.75rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0 0 var(--sp-4);
+}
+
+main#main-content section h3 {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  margin: var(--sp-5) 0 var(--sp-2);
+  color: var(--color-fg);
+}
+main#main-content section h3:first-of-type {
+  margin-top: 0;
+}
+
+main#main-content section p {
+  font-size: 1rem;
+  line-height: var(--lh-body);
+  color: var(--color-fg-muted);
+  margin: 0 0 var(--sp-3);
+  max-width: 62ch;
+}
+
+/* Lists */
+main#main-content section ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  margin: 0 0 var(--sp-3);
+  padding: 0;
+}
+
+main#main-content section li {
+  font-size: 0.9375rem;
+  color: var(--color-fg-muted);
+  line-height: 1.6;
+  padding-left: var(--sp-4);
+  position: relative;
+}
+
+main#main-content section li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
+
+/* Links inside sections */
+main#main-content section a {
+  color: var(--color-fg);
+  text-decoration: underline;
+  text-decoration-color: var(--color-border-strong);
+  text-underline-offset: 3px;
+  transition: color var(--dur-fast) var(--ease),
+    text-decoration-color var(--dur-fast) var(--ease);
+}
+main#main-content section a:hover {
+  text-decoration-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+/* Quick facts box */
+section[aria-label="Quick facts about Amul Sharma"] {
+  background: var(--color-bg-raised);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--sp-5) var(--sp-5) var(--sp-2);
+}
+
+/* FAQ heading accent */
+section[aria-labelledby="faq-heading"] h3 {
+  color: var(--color-fg);
+}
+
+/* =============================================================
+   FOOTER
+   ============================================================= */
+footer {
+  border-top: 1px solid var(--color-border);
+  padding: var(--sp-7) var(--sp-6);
+  text-align: center;
+  color: var(--color-fg-subtle);
+  font-size: 0.875rem;
+}
+
+footer .footer-heading {
+  color: var(--color-fg-muted);
+  font-weight: 600;
+  margin: 0 0 var(--sp-4);
+}
+
+footer .social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--sp-5);
+  margin-bottom: var(--sp-4);
+}
+
+footer .social-links a {
+  font-size: 0.875rem;
+  color: var(--color-fg-muted);
+  text-decoration: none;
+  transition: color var(--dur-fast) var(--ease);
+}
+footer .social-links a:hover {
+  color: var(--color-fg);
+}
+
+footer p {
+  margin: 0;
+  color: var(--color-fg-subtle);
+}
+
+/* =============================================================
+   RESPONSIVE
+   ============================================================= */
+@media (max-width: 640px) {
+  header {
+    padding: var(--sp-3) var(--sp-4);
+    gap: var(--sp-4);
+  }
+
+  header nav {
+    gap: var(--sp-4);
+  }
+
+  header nav a {
+    font-size: 0.75rem;
+  }
+
+  main#main-content {
+    padding: var(--sp-6) var(--sp-4) var(--sp-7);
+  }
+
+  main#main-content > img {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  main#main-content section {
+    margin-bottom: var(--sp-7);
+    padding-top: var(--sp-5);
+  }
+
+  footer .social-links {
+    gap: var(--sp-4);
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+</style>
+
+  <!-- ============================================================
+       PERSON SCHEMA — same @id as homepage (entity unification)
+       ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://www.amulsharma.com.np/#person",
+    "name": "Amul Sharma",
+    "givenName": "Amul",
+    "familyName": "Sharma",
+    "url": "https://www.amulsharma.com.np/",
+    "image": "https://www.amulsharma.com.np/database/profile.jpg",
+    "jobTitle": "Backend & AI Developer",
+    "description": "Amul Sharma is a Nepal-based BSc IT student and backend/AI developer specializing in Python, Django, Django REST Framework, REST APIs, PostgreSQL, Docker, AWS, and AI-powered applications including RAG and machine learning.",
+    "knowsAbout": [
+      "Python", "Django", "Django REST Framework", "Backend Development",
+      "REST APIs", "PostgreSQL", "Docker", "AWS", "Artificial Intelligence",
+      "Retrieval-Augmented Generation", "Machine Learning", "React",
+      "JavaScript", "TypeScript", "Git", "GitHub", "Celery", "Redis",
+      "JWT Authentication", "Role-Based Access Control"
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "ISMT College",
+      "address": { "@type": "PostalAddress", "addressCountry": "NP" }
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "NP",
+      "addressRegion": "Bagmati",
+      "addressLocality": "Patan"
+    },
+    "nationality": { "@type": "Country", "name": "Nepal" },
+    "email": "mailto:amulshar80@gmail.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/amul-sharma-8ba34a3b4/",
+      "https://github.com/CODE-WITH-AMUL",
+      "https://www.youtube.com/@Code-With-Amul"
+    ],
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Backend & AI Developer",
+      "occupationalCategory": "15-1252.00"
+    },
+    "knowsLanguage": ["English", "Nepali"]
+  }
+  </script>
+
+  <!-- PROFILE PAGE SCHEMA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": "https://www.amulsharma.com.np/about-amul-sharma.html#profilepage",
+    "url": "https://www.amulsharma.com.np/about-amul-sharma.html",
+    "name": "About Amul Sharma | Backend & AI Developer from Nepal",
+    "description": "Background, skills, projects and FAQ about Amul Sharma, a backend & AI developer from Nepal.",
+    "mainEntity": { "@id": "https://www.amulsharma.com.np/#person" },
+    "isPartOf": { "@id": "https://www.amulsharma.com.np/#website" },
+    "datePublished": "2025-01-01",
+    "dateModified": "2026-09-11",
+    "inLanguage": "en-US"
+  }
+  </script>
+
+  <!-- BREADCRUMB -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.amulsharma.com.np/" },
+      { "@type": "ListItem", "position": 2, "name": "About Amul Sharma", "item": "https://www.amulsharma.com.np/about-amul-sharma.html" }
+    ]
+  }
+  </script>
+
+  <!-- FAQ SCHEMA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Who is Amul Sharma?", "acceptedAnswer": { "@type": "Answer", "text": "Amul Sharma is a backend and AI developer from Nepal and a BSc IT student at ISMT College. He specializes in Python, Django, and Django REST Framework, and builds backend systems, REST APIs, and AI-powered applications." } },
+      { "@type": "Question", "name": "What does Amul Sharma specialize in?", "acceptedAnswer": { "@type": "Answer", "text": "Amul Sharma specializes in backend development with Python and Django, including Django REST Framework, PostgreSQL, Docker, and AWS. He also works with AI-powered applications, RAG (Retrieval-Augmented Generation), machine learning, React, and JavaScript." } },
+      { "@type": "Question", "name": "Where is Amul Sharma based?", "acceptedAnswer": { "@type": "Answer", "text": "Amul Sharma is based in Nepal." } },
+      { "@type": "Question", "name": "What projects has Amul Sharma built?", "acceptedAnswer": { "@type": "Answer", "text": "Amul Sharma has built Job Sarathi (job management platform), PromtMarket (Django web app), ePharmacy (pharmacy management), FinCore (ERP/accounting), a Physics Simulation Tool, a Stock Prediction Portal using Python, Django and machine learning, a Social Coding Platform, a Smart CCTV Surveillance System using Python and OpenCV, and an AI-powered text summarization app built with Django." } },
+      { "@type": "Question", "name": "Where can I find Amul Sharma's code or GitHub projects?", "acceptedAnswer": { "@type": "Answer", "text": "Amul Sharma's projects are available on GitHub at github.com/CODE-WITH-AMUL." } },
+      { "@type": "Question", "name": "How can I contact Amul Sharma?", "acceptedAnswer": { "@type": "Answer", "text": "Amul Sharma can be contacted by email at amulshar80@gmail.com, or through the contact form on his portfolio at amulsharma.com.np, or via LinkedIn." } },
+      { "@type": "Question", "name": "What is Amul Sharma's educational background?", "acceptedAnswer": { "@type": "Answer", "text": "Amul Sharma is a BSc Information Technology student at ISMT College in Nepal." } },
+      { "@type": "Question", "name": "Is Amul Sharma a data scientist or a backend developer?", "acceptedAnswer": { "@type": "Answer", "text": "Amul Sharma is positioned as a Backend Software Engineer with an applied AI specialization, rather than a pure data scientist. His focus is Python, Django, APIs, databases, cloud infrastructure, and applied AI/RAG." } }
+    ]
+  }
+  </script>
+
+  <!-- WEBSITE SCHEMA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://www.amulsharma.com.np/#website",
+    "name": "Amul Sharma Portfolio",
+    "url": "https://www.amulsharma.com.np/",
+    "description": "Official portfolio website of Amul Sharma, Backend & AI Developer from Nepal.",
+    "author": { "@id": "https://www.amulsharma.com.np/#person" },
+    "inLanguage": "en-US"
+  }
+  </script>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <header role="banner">
+    <a href="/" class="logo">AMUL SHARMA</a>
+    <nav role="navigation" aria-label="Main navigation">
+      <a href="/">HOME</a>
+      <a href="/#projects">PROJECTS</a>
+      <a href="/about-amul-sharma.html">ABOUT</a>
+      <a href="/#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <nav aria-label="Breadcrumb">
+      <a href="/">Home</a> &rsaquo; <span>About Amul Sharma</span>
+    </nav>
+
+    <h1>About Amul Sharma</h1>
+    <p class="hero-subtitle">Backend &amp; AI Developer from Nepal</p>
+
+
+    <!-- QUICK FACTS -->
+    <section aria-label="Quick facts about Amul Sharma">
+      <h2>Quick Facts</h2>
+      <ul>
+        <li>Amul Sharma is a backend and AI developer from Nepal.</li>
+        <li>He is a BSc Information Technology student at ISMT College in Nepal.</li>
+        <li>He specializes in Python, Django, and Django REST Framework.</li>
+        <li>He builds REST APIs, backend systems, and AI-powered applications.</li>
+        <li>His core stack includes Python, Django, PostgreSQL, Docker, and AWS.</li>
+        <li>He is currently expanding into system design, DevOps, RAG, and applied AI.</li>
+        <li>His developer identity is <strong>CODE-WITH-AMUL</strong> on GitHub.</li>
+        <li>His projects and source code are published on GitHub at <a href="https://github.com/CODE-WITH-AMUL" target="_blank" rel="noopener noreferrer">github.com/CODE-WITH-AMUL</a>.</li>
+        <li>His official portfolio is <a href="https://www.amulsharma.com.np/">amulsharma.com.np</a>.</li>
+        <li>He shares backend and AI tutorials on YouTube at <a href="https://www.youtube.com/@Code-With-Amul" target="_blank" rel="noopener noreferrer">Code-With-Amul</a>.</li>
+      </ul>
+    </section>
+
+    <!-- BACKGROUND -->
+    <section>
+      <h2>Background</h2>
+      <p>Amul Sharma is a backend developer and BSc Information Technology student at ISMT College in Nepal. He
+        focuses on building scalable web applications, with a particular emphasis on the Python and Django
+        ecosystem, and is expanding his skills in system design, DevOps, and applied artificial intelligence.</p>
+      <p>His professional direction is <strong>Backend Software Engineering with an applied AI specialization</strong>,
+        combining Python, Django, REST APIs, databases, cloud infrastructure, and AI/RAG systems rather than
+        pursuing a purely theoretical data-science path.</p>
+      <p>Alongside his development work, Amul shares his learning journey and technical insights through content
+        creation on YouTube under the channel <em>Code-With-Amul</em>, helping others in the tech community learn
+        backend development and AI concepts.</p>
+    </section>
+
+    <!-- TECHNICAL FOCUS -->
+    <section>
+      <h2>Technical Focus</h2>
+
+      <h3>Backend</h3>
+      <ul>
+        <li>Python, Django, and Django REST Framework</li>
+        <li>REST APIs, serializers, viewsets, routers, JWT authentication</li>
+        <li>Permissions, Role-Based Access Control (RBAC), filtering, pagination</li>
+        <li>Celery, Redis, database indexing, security middleware, automated testing</li>
+      </ul>
+
+      <h3>Databases</h3>
+      <ul>
+        <li>PostgreSQL and relational database design</li>
+        <li>SQLite and MongoDB</li>
+      </ul>
+
+      <h3>Frontend</h3>
+      <ul>
+        <li>HTML, CSS, JavaScript, TypeScript</li>
+        <li>React, Vite, Tailwind CSS</li>
+      </ul>
+
+      <h3>Cloud &amp; DevOps</h3>
+      <ul>
+        <li>Docker for containerized deployment</li>
+        <li>AWS and Microsoft Azure for cloud infrastructure</li>
+        <li>Ubuntu, Nginx, GitHub, Render, Vercel</li>
+      </ul>
+
+      <h3>AI / Machine Learning</h3>
+      <ul>
+        <li>Retrieval-Augmented Generation (RAG) and Parameter-Efficient Fine-Tuning (PEFT)</li>
+        <li>Embeddings and vector databases</li>
+        <li>Logistic Regression, Decision Trees, Random Forest, KNN, XGBoost, LightGBM, CatBoost</li>
+        <li>SHAP explainability, Optuna, cross-validation, ROC-AUC, PR-AUC, MCC</li>
+        <li>Applying AI/machine learning techniques in backend applications</li>
+      </ul>
+    </section>
+
+    <!-- SELECTED PROJECTS -->
+    <section>
+      <h2>Selected Projects</h2>
+      <p>A sample of Amul Sharma's work, all developed and maintained by him:</p>
+      <ul>
+        <li><strong>Job Sarathi</strong> — a job-management and recruitment platform built with Django backend and React/Vite TypeScript frontend.</li>
+        <li><strong>PromtMarket</strong> — a Django web application deployed on Render, involving PostgreSQL/Supabase and MongoDB/Djongo experiments.</li>
+        <li><strong>ePharmacy</strong> — a Django-based pharmacy management system with custom authentication, admin/employee/customer roles, and email verification.</li>
+        <li><strong>FinCore</strong> — an ERP/accounting platform for startups, covering invoices, expenses, tax/VAT, cash flow, and audit reporting.</li>
+        <li><strong>Physics Simulation Tool</strong> — interactive 2D/3D physics visualization app.</li>
+        <li><strong>Stock Prediction Portal</strong> — Django &amp; machine-learning based stock analysis app.</li>
+        <li><strong>Social Coding Platform</strong> — a platform for developers to share and review projects.</li>
+        <li><strong>Smart CCTV Surveillance System</strong> — Python/OpenCV based real-time movement detection.</li>
+        <li><strong>Summary AI in Django</strong> — NLP-based text summarization built with Django.</li>
+      </ul>
+      <p><a href="/#projects">View all projects on Amul Sharma's portfolio</a>.</p>
+    </section>
+
+    <!-- RESEARCH -->
+    <section>
+      <h2>Research Interests</h2>
+      <ul>
+        <li><strong>Applied AI / RAG:</strong> Empirical evaluation of RAG and PEFT for efficient and reliable domain-specific LLMs.</li>
+        <li><strong>Machine Learning:</strong> Heart-attack prediction with CatBoost/LightGBM, tuberculosis prediction with XGBoost.</li>
+        <li><strong>Cybersecurity:</strong> Impact of cybersecurity practices on AI adoption in small businesses in Kathmandu (TOE framework).</li>
+        <li><strong>Cloud Computing:</strong> Azure-based architecture with VNets, NSGs, Load Balancers, and VM Scale Sets.</li>
+      </ul>
+    </section>
+
+    <!-- FAQ -->
+    <section aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Frequently Asked Questions</h2>
+
+      <h3>Who is Amul Sharma?</h3>
+      <p>Amul Sharma is a backend and AI developer from Nepal and a BSc IT student at ISMT College. He specializes
+        in Python, Django, and Django REST Framework, and builds backend systems, REST APIs, and AI-powered
+        applications.</p>
+
+      <h3>What does Amul Sharma specialize in?</h3>
+      <p>Amul Sharma specializes in backend development with Python and Django, including Django REST Framework,
+        PostgreSQL, Docker, and AWS. He also works with AI-powered applications, RAG (Retrieval-Augmented
+        Generation), machine learning, React, and JavaScript.</p>
+
+      <h3>Where is Amul Sharma based?</h3>
+      <p>Amul Sharma is based in Nepal.</p>
+
+      <h3>What is Amul Sharma's educational background?</h3>
+      <p>Amul Sharma is a BSc Information Technology student at ISMT College in Nepal.</p>
+
+      <h3>Is Amul Sharma a data scientist or a backend developer?</h3>
+      <p>Amul Sharma is positioned as a Backend Software Engineer with an applied AI specialization, rather than a
+        pure data scientist. His focus is Python, Django, APIs, databases, cloud infrastructure, and applied
+        AI/RAG.</p>
+
+      <h3>What projects has Amul Sharma built?</h3>
+      <p>Amul Sharma has built Job Sarathi (job management platform), PromtMarket (Django web app), ePharmacy
+        (pharmacy management), FinCore (ERP/accounting), a Physics Simulation Tool, a Stock Prediction Portal
+        using Python, Django and machine learning, a Social Coding Platform, a Smart CCTV Surveillance System
+        using Python and OpenCV, and an AI-powered text summarization app built with Django.</p>
+
+      <h3>Where can I find Amul Sharma's code or GitHub projects?</h3>
+      <p>Amul Sharma's projects are available on GitHub at
+        <a href="https://github.com/CODE-WITH-AMUL" target="_blank" rel="noopener noreferrer">github.com/CODE-WITH-AMUL</a>.</p>
+
+      <h3>How can I contact Amul Sharma?</h3>
+      <p>Amul Sharma can be contacted by email at <a href="mailto:amulshar80@gmail.com">amulshar80@gmail.com</a>,
+        through the <a href="/#contact">contact form</a> on his portfolio, or via
+        <a href="https://www.linkedin.com/in/amul-sharma-8ba34a3b4/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+    </section>
+
+    <section>
+      <h2>Connect with Amul Sharma</h2>
+      <ul>
+        <li><a href="https://github.com/CODE-WITH-AMUL" target="_blank" rel="noopener noreferrer">GitHub — CODE-WITH-AMUL</a></li>
+        <li><a href="https://www.linkedin.com/in/amul-sharma-8ba34a3b4/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://www.youtube.com/@Code-With-Amul" target="_blank" rel="noopener noreferrer">YouTube — Code-With-Amul</a></li>
+        <li><a href="mailto:amulshar80@gmail.com">Email — amulshar80@gmail.com</a></li>
+        <li><a href="https://www.amulsharma.com.np/">Portfolio — amulsharma.com.np</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p class="footer-heading">Amul Sharma — Backend &amp; AI Developer from Nepal</p>
+    <nav class="social-links" aria-label="Social media links">
+      <a href="/">Home</a>
+      <a href="/#projects">Projects</a>
+      <a href="https://github.com/CODE-WITH-AMUL" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/amul-sharma-8ba34a3b4/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </nav>
+    <p>&copy; <span id="year">2025</span> Amul Sharma. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
