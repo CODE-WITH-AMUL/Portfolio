@@ -21,9 +21,9 @@ Amul Sharma, a Nepal-based BSc Information Technology student at ISMT College an
 
 - [Home](https://amulsharma.com.np/): Portfolio overview, selected projects, tools, timeline, and contact.
 - [About Amul Sharma](https://amulsharma.com.np/about-amul-sharma.html): Full biography, quick facts, technical focus, projects, research interests, and FAQ.
-- [Projects](https://amulsharma.com.np/projects.html): Complete list of software and machine learning projects.
-- [Research](https://amulsharma.com.np/research.html): Research on RAG, PEFT, applied AI, and cybersecurity adoption.
-- [Contact](https://amulsharma.com.np/contact.html): Contact form and channels.
+
+## Contact
+Preferred contact: via the contact section on the [homepage](https://amulsharma.com.np/#contact) or by email at amulshar80@gmail.com.
 
 ## AI-Readable Resources
 
