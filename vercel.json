@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "www.amulsharma.com.np" }],
+      "destination": "https://amulsharma.com.np/$1",
+      "permanent": true
+    }
+  ]
+}
