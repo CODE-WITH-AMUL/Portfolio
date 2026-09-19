@@ -8,18 +8,38 @@
   <title>About Amul Sharma | Backend & AI Developer from Nepal</title>
   <meta name="description"
     content="Learn about Amul Sharma — a backend & AI developer from Nepal and BSc IT student at ISMT College. Background, skills, projects, and research.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.amulsharma.com.np/about-amul-sharma.html">
+  <meta name="author" content="Amul Sharma">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="language" content="English">
+  <meta name="theme-color" content="#0a0a0a">
+
+  <!-- GEO / LOCAL -->
+  <meta name="geo.region" content="NP">
+  <meta name="geo.placename" content="Nepal">
+  <meta name="geo.position" content="27.6588;85.3247">
+  <meta name="ICBM" content="27.6588, 85.3247">
+
+  <link rel="canonical" href="https://amulsharma.com.np/about-amul-sharma.html">
+  <link rel="author" href="https://amulsharma.com.np/about-amul-sharma.html">
   <link rel="icon" href="database/logo.ico" type="image/x-icon" />
+
+  <!-- AI / LLM-readable resources -->
+  <link rel="alternate" type="text/plain" href="https://amulsharma.com.np/amul-sharma.txt" title="AI-readable profile of Amul Sharma">
+  <link rel="alternate" type="text/markdown" href="https://amulsharma.com.np/llms.txt" title="LLM site overview">
+  <link rel="sitemap" type="application/xml" href="https://amulsharma.com.np/sitemap.xml">
+
   <link rel="stylesheet" href="aboutpage.css" />
 
   <!-- OPEN GRAPH -->
   <meta property="og:title" content="About Amul Sharma | Backend & AI Developer from Nepal">
   <meta property="og:description"
     content="Background, skills and projects of Amul Sharma, a backend & AI developer from Nepal.">
-  <meta property="og:url" content="https://www.amulsharma.com.np/about-amul-sharma.html">
+  <meta property="og:url" content="https://amulsharma.com.np/about-amul-sharma.html">
   <meta property="og:type" content="profile">
-  <meta property="og:image" content="https://www.amulsharma.com.np/database/profile.jpg">
+  <meta property="og:image" content="https://amulsharma.com.np/database/profile.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:secure_url" content="https://amulsharma.com.np/database/profile.jpg">
   <meta property="og:site_name" content="Amul Sharma Portfolio">
 
   <!-- TWITTER -->
@@ -27,13 +47,134 @@
   <meta name="twitter:title" content="About Amul Sharma | Backend & AI Developer from Nepal">
   <meta name="twitter:description"
     content="Backend & AI developer from Nepal specializing in Python, Django and AI-powered applications.">
-  <meta name="twitter:image" content="https://www.amulsharma.com.np/database/profile.jpg">
+  <meta name="twitter:image" content="https://amulsharma.com.np/database/profile.jpg">
 
-  <!-- GEO / LOCAL -->
-  <meta name="geo.region" content="NP">
-  <meta name="geo.placename" content="Nepal">
-  <meta name="language" content="English">
-  <meta name="author" content="Amul Sharma">
+  <!-- ============================================================
+       PERSON SCHEMA — same @id as homepage (entity unification)
+       FIXED: previously contained duplicate keys + a syntax error
+       that caused the entire block to be ignored by validators.
+       ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://amulsharma.com.np/#person",
+    "name": "Amul Sharma",
+    "givenName": "Amul",
+    "familyName": "Sharma",
+    "url": "https://amulsharma.com.np/",
+    "image": "https://amulsharma.com.np/database/profile.jpg",
+    "jobTitle": "Backend & AI Developer",
+    "description": "Amul Sharma is a Nepal-based BSc IT student and backend/AI developer specializing in Python, Django, Django REST Framework, REST APIs, PostgreSQL, Docker, AWS, and AI-powered applications including RAG and machine learning.",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "ISMT College",
+      "address": { "@type": "PostalAddress", "addressCountry": "NP" }
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "NP",
+      "addressRegion": "Bagmati",
+      "addressLocality": "Patan"
+    },
+    "nationality": { "@type": "Country", "name": "Nepal" },
+    "email": "mailto:amulshar80@gmail.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/amul-sharma-8ba34a3b4/",
+      "https://github.com/CODE-WITH-AMUL",
+      "https://www.youtube.com/@Code-With-Amul"
+    ],
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Backend & AI Developer",
+      "occupationalCategory": "15-1252.00"
+    },
+    "knowsLanguage": ["English", "Nepali"]
+  }
+  </script>
+
+  <!-- PROFILE PAGE SCHEMA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": "https://amulsharma.com.np/about-amul-sharma.html#profilepage",
+    "url": "https://amulsharma.com.np/about-amul-sharma.html",
+    "name": "About Amul Sharma | Backend & AI Developer from Nepal",
+    "description": "Background, skills, projects and FAQ about Amul Sharma, a backend & AI developer from Nepal.",
+    "mainEntity": { "@id": "https://amulsharma.com.np/#person" },
+    "isPartOf": { "@id": "https://amulsharma.com.np/#website" },
+    "datePublished": "2025-01-01",
+    "dateModified": "2026-09-20",
+    "inLanguage": "en-US",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".hero-subtitle"]
+    }
+  }
+  </script>
+
+  <!-- ABOUT PAGE SCHEMA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "@id": "https://amulsharma.com.np/about-amul-sharma.html#aboutpage",
+    "url": "https://amulsharma.com.np/about-amul-sharma.html",
+    "name": "About Amul Sharma",
+    "description": "Full biography of Amul Sharma, a backend and AI developer from Nepal.",
+    "about": { "@id": "https://amulsharma.com.np/#person" },
+    "mainEntity": { "@id": "https://amulsharma.com.np/#person" },
+    "isPartOf": { "@id": "https://amulsharma.com.np/#website" },
+    "inLanguage": "en-US"
+  }
+  </script>
+
+  <!-- BREADCRUMB -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://amulsharma.com.np/about-amul-sharma.html#breadcrumb",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://amulsharma.com.np/" },
+      { "@type": "ListItem", "position": 2, "name": "About Amul Sharma", "item": "https://amulsharma.com.np/about-amul-sharma.html" }
+    ]
+  }
+  </script>
+
+  <!-- FAQ SCHEMA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://amulsharma.com.np/about-amul-sharma.html#faq",
+    "mainEntity": [
+      { "@type": "Question", "name": "Who is Amul Sharma?", "acceptedAnswer": { "@type": "Answer", "text": "Amul Sharma is a backend and AI developer from Nepal and a BSc IT student at ISMT College. He specializes in Python, Django, and Django REST Framework, and builds backend systems, REST APIs, and AI-powered applications." } },
+      { "@type": "Question", "name": "What does Amul Sharma specialize in?", "acceptedAnswer": { "@type": "Answer", "text": "Amul Sharma specializes in backend development with Python and Django, including Django REST Framework, PostgreSQL, Docker, and AWS. He also works with AI-powered applications, RAG (Retrieval-Augmented Generation), machine learning, React, and JavaScript." } },
+      { "@type": "Question", "name": "Where is Amul Sharma based?", "acceptedAnswer": { "@type": "Answer", "text": "Amul Sharma is based in Nepal." } },
+      { "@type": "Question", "name": "What projects has Amul Sharma built?", "acceptedAnswer": { "@type": "Answer", "text": "Amul Sharma has built Job Sarathi (job management platform), PromtMarket (Django web app), ePharmacy (pharmacy management), FinCore (ERP/accounting), a Physics Simulation Tool, a Stock Prediction Portal using Python, Django and machine learning, a Social Coding Platform, a Smart CCTV Surveillance System using Python and OpenCV, and an AI-powered text summarization app built with Django." } },
+      { "@type": "Question", "name": "Where can I find Amul Sharma's code or GitHub projects?", "acceptedAnswer": { "@type": "Answer", "text": "Amul Sharma's projects are available on GitHub at github.com/CODE-WITH-AMUL." } },
+      { "@type": "Question", "name": "How can I contact Amul Sharma?", "acceptedAnswer": { "@type": "Answer", "text": "Amul Sharma can be contacted by email at amulshar80@gmail.com, or through the contact form on his portfolio at amulsharma.com.np, or via LinkedIn." } },
+      { "@type": "Question", "name": "What is Amul Sharma's educational background?", "acceptedAnswer": { "@type": "Answer", "text": "Amul Sharma is a BSc Information Technology student at ISMT College in Nepal." } },
+      { "@type": "Question", "name": "Is Amul Sharma a data scientist or a backend developer?", "acceptedAnswer": { "@type": "Answer", "text": "Amul Sharma is positioned as a Backend Software Engineer with an applied AI specialization, rather than a pure data scientist. His focus is Python, Django, APIs, databases, cloud infrastructure, and applied AI/RAG." } }
+    ]
+  }
+  </script>
+
+  <!-- WEBSITE SCHEMA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://amulsharma.com.np/#website",
+    "name": "Amul Sharma Portfolio",
+    "url": "https://amulsharma.com.np/",
+    "description": "Official portfolio website of Amul Sharma, Backend & AI Developer from Nepal.",
+    "author": { "@id": "https://amulsharma.com.np/#person" },
+    "inLanguage": "en-US"
+  }
+  </script>
 
 <style>
     /* =============================================================
@@ -298,6 +439,15 @@ section[aria-label="Quick facts about Amul Sharma"] {
   padding: var(--sp-5) var(--sp-5) var(--sp-2);
 }
 
+/* Identity line */
+.identity-line {
+  font-size: 1rem;
+  line-height: var(--lh-body);
+  color: var(--color-fg);
+  margin: 0 0 var(--sp-4);
+  max-width: 62ch;
+}
+
 /* FAQ heading accent */
 section[aria-labelledby="faq-heading"] h3 {
   color: var(--color-fg);
@@ -392,127 +542,23 @@ footer p {
   }
 }
 </style>
-
-  <!-- ============================================================
-       PERSON SCHEMA — same @id as homepage (entity unification)
-       ============================================================ -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "@id": "https://www.amulsharma.com.np/#person",
-    "name": "Amul Sharma",
-    "givenName": "Amul",
-    "familyName": "Sharma",
-    "url": "https://www.amulsharma.com.np/",
-    "image": "https://www.amulsharma.com.np/database/profile.jpg",
-    "jobTitle": "Backend & AI Developer",
-    "description": "Amul Sharma is a Nepal-based BSc IT student and backend/AI developer specializing in Python, Django, Django REST Framework, REST APIs, PostgreSQL, Docker, AWS, and AI-powered applications including RAG and machine learning.",
-    "knowsAbout": [
-      "Python", "Django", "Django REST Framework", "Backend Development",
-      "REST APIs", "PostgreSQL", "Docker", "AWS", "Artificial Intelligence",
-      "Retrieval-Augmented Generation", "Machine Learning", "React",
-      "JavaScript", "TypeScript", "Git", "GitHub", "Celery", "Redis",
-      "JWT Authentication", "Role-Based Access Control"
-    ],
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "ISMT College",
-      "address": { "@type": "PostalAddress", "addressCountry": "NP" }
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "NP",
-      "addressRegion": "Bagmati",
-      "addressLocality": "Patan"
-    },
-    "nationality": { "@type": "Country", "name": "Nepal" },
-    "email": "mailto:amulshar80@gmail.com",
-    "sameAs": [
-      "https://www.linkedin.com/in/amul-sharma-8ba34a3b4/",
-      "https://github.com/CODE-WITH-AMUL",
-      "https://www.youtube.com/@Code-With-Amul"
-    ],
-    "hasOccupation": {
-      "@type": "Occupation",
-      "name": "Backend & AI Developer",
-      "occupationalCategory": "15-1252.00"
-    },
-    "knowsLanguage": ["English", "Nepali"]
-  }
-  </script>
-
-  <!-- PROFILE PAGE SCHEMA -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfilePage",
-    "@id": "https://www.amulsharma.com.np/about-amul-sharma.html#profilepage",
-    "url": "https://www.amulsharma.com.np/about-amul-sharma.html",
-    "name": "About Amul Sharma | Backend & AI Developer from Nepal",
-    "description": "Background, skills, projects and FAQ about Amul Sharma, a backend & AI developer from Nepal.",
-    "mainEntity": { "@id": "https://www.amulsharma.com.np/#person" },
-    "isPartOf": { "@id": "https://www.amulsharma.com.np/#website" },
-    "datePublished": "2025-01-01",
-    "dateModified": "2026-09-11",
-    "inLanguage": "en-US"
-  }
-  </script>
-
-  <!-- BREADCRUMB -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.amulsharma.com.np/" },
-      { "@type": "ListItem", "position": 2, "name": "About Amul Sharma", "item": "https://www.amulsharma.com.np/about-amul-sharma.html" }
-    ]
-  }
-  </script>
-
-  <!-- FAQ SCHEMA -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      { "@type": "Question", "name": "Who is Amul Sharma?", "acceptedAnswer": { "@type": "Answer", "text": "Amul Sharma is a backend and AI developer from Nepal and a BSc IT student at ISMT College. He specializes in Python, Django, and Django REST Framework, and builds backend systems, REST APIs, and AI-powered applications." } },
-      { "@type": "Question", "name": "What does Amul Sharma specialize in?", "acceptedAnswer": { "@type": "Answer", "text": "Amul Sharma specializes in backend development with Python and Django, including Django REST Framework, PostgreSQL, Docker, and AWS. He also works with AI-powered applications, RAG (Retrieval-Augmented Generation), machine learning, React, and JavaScript." } },
-      { "@type": "Question", "name": "Where is Amul Sharma based?", "acceptedAnswer": { "@type": "Answer", "text": "Amul Sharma is based in Nepal." } },
-      { "@type": "Question", "name": "What projects has Amul Sharma built?", "acceptedAnswer": { "@type": "Answer", "text": "Amul Sharma has built Job Sarathi (job management platform), PromtMarket (Django web app), ePharmacy (pharmacy management), FinCore (ERP/accounting), a Physics Simulation Tool, a Stock Prediction Portal using Python, Django and machine learning, a Social Coding Platform, a Smart CCTV Surveillance System using Python and OpenCV, and an AI-powered text summarization app built with Django." } },
-      { "@type": "Question", "name": "Where can I find Amul Sharma's code or GitHub projects?", "acceptedAnswer": { "@type": "Answer", "text": "Amul Sharma's projects are available on GitHub at github.com/CODE-WITH-AMUL." } },
-      { "@type": "Question", "name": "How can I contact Amul Sharma?", "acceptedAnswer": { "@type": "Answer", "text": "Amul Sharma can be contacted by email at amulshar80@gmail.com, or through the contact form on his portfolio at amulsharma.com.np, or via LinkedIn." } },
-      { "@type": "Question", "name": "What is Amul Sharma's educational background?", "acceptedAnswer": { "@type": "Answer", "text": "Amul Sharma is a BSc Information Technology student at ISMT College in Nepal." } },
-      { "@type": "Question", "name": "Is Amul Sharma a data scientist or a backend developer?", "acceptedAnswer": { "@type": "Answer", "text": "Amul Sharma is positioned as a Backend Software Engineer with an applied AI specialization, rather than a pure data scientist. His focus is Python, Django, APIs, databases, cloud infrastructure, and applied AI/RAG." } }
-    ]
-  }
-  </script>
-
-  <!-- WEBSITE SCHEMA -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "@id": "https://www.amulsharma.com.np/#website",
-    "name": "Amul Sharma Portfolio",
-    "url": "https://www.amulsharma.com.np/",
-    "description": "Official portfolio website of Amul Sharma, Backend & AI Developer from Nepal.",
-    "author": { "@id": "https://www.amulsharma.com.np/#person" },
-    "inLanguage": "en-US"
-  }
-  </script>
 </head>
 
 <body>
   <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <noscript>
+    <p style="padding: 1rem; text-align: center; color: #a3a3a3;">
+      Amul Sharma is a backend and AI developer from Nepal specializing in Python, Django, and Django REST Framework. See <a href="https://github.com/CODE-WITH-AMUL">github.com/CODE-WITH-AMUL</a> for projects.
+    </p>
+  </noscript>
 
   <header role="banner">
     <a href="/" class="logo">AMUL SHARMA</a>
     <nav role="navigation" aria-label="Main navigation">
       <a href="/">HOME</a>
       <a href="/#projects">PROJECTS</a>
-      <a href="/about-amul-sharma.html">ABOUT</a>
+      <a href="/about-amul-sharma.html" aria-current="page">ABOUT</a>
       <a href="/#contact">CONTACT</a>
     </nav>
   </header>
@@ -525,6 +571,10 @@ footer p {
     <h1>About Amul Sharma</h1>
     <p class="hero-subtitle">Backend &amp; AI Developer from Nepal</p>
 
+    <!-- IDENTITY LINE -->
+    <p class="identity-line">
+      <strong>Amul Sharma</strong> is a Nepal-based BSc Information Technology student at ISMT College and a backend &amp; AI developer associated with <strong>CODE-WITH-AMUL</strong>. He specializes in Python, Django, Django REST Framework, and applied AI development.
+    </p>
 
     <!-- QUICK FACTS -->
     <section aria-label="Quick facts about Amul Sharma">
@@ -538,13 +588,13 @@ footer p {
         <li>He is currently expanding into system design, DevOps, RAG, and applied AI.</li>
         <li>His developer identity is <strong>CODE-WITH-AMUL</strong> on GitHub.</li>
         <li>His projects and source code are published on GitHub at <a href="https://github.com/CODE-WITH-AMUL" target="_blank" rel="noopener noreferrer">github.com/CODE-WITH-AMUL</a>.</li>
-        <li>His official portfolio is <a href="https://www.amulsharma.com.np/">amulsharma.com.np</a>.</li>
+        <li>His official portfolio is <a href="https://amulsharma.com.np/">amulsharma.com.np</a>.</li>
         <li>He shares backend and AI tutorials on YouTube at <a href="https://www.youtube.com/@Code-With-Amul" target="_blank" rel="noopener noreferrer">Code-With-Amul</a>.</li>
       </ul>
     </section>
 
     <!-- BACKGROUND -->
-    <section>
+    <section aria-label="Background of Amul Sharma">
       <h2>Background</h2>
       <p>Amul Sharma is a backend developer and BSc Information Technology student at ISMT College in Nepal. He
         focuses on building scalable web applications, with a particular emphasis on the Python and Django
@@ -558,7 +608,7 @@ footer p {
     </section>
 
     <!-- TECHNICAL FOCUS -->
-    <section>
+    <section aria-label="Technical focus of Amul Sharma">
       <h2>Technical Focus</h2>
 
       <h3>Backend</h3>
@@ -599,7 +649,7 @@ footer p {
     </section>
 
     <!-- SELECTED PROJECTS -->
-    <section>
+    <section aria-label="Projects by Amul Sharma">
       <h2>Selected Projects</h2>
       <p>A sample of Amul Sharma's work, all developed and maintained by him:</p>
       <ul>
@@ -617,7 +667,7 @@ footer p {
     </section>
 
     <!-- RESEARCH -->
-    <section>
+    <section aria-label="Research interests of Amul Sharma">
       <h2>Research Interests</h2>
       <ul>
         <li><strong>Applied AI / RAG:</strong> Empirical evaluation of RAG and PEFT for efficient and reliable domain-specific LLMs.</li>
@@ -668,14 +718,14 @@ footer p {
         <a href="https://www.linkedin.com/in/amul-sharma-8ba34a3b4/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
     </section>
 
-    <section>
+    <section aria-label="Connect with Amul Sharma">
       <h2>Connect with Amul Sharma</h2>
       <ul>
         <li><a href="https://github.com/CODE-WITH-AMUL" target="_blank" rel="noopener noreferrer">GitHub — CODE-WITH-AMUL</a></li>
         <li><a href="https://www.linkedin.com/in/amul-sharma-8ba34a3b4/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
         <li><a href="https://www.youtube.com/@Code-With-Amul" target="_blank" rel="noopener noreferrer">YouTube — Code-With-Amul</a></li>
         <li><a href="mailto:amulshar80@gmail.com">Email — amulshar80@gmail.com</a></li>
-        <li><a href="https://www.amulsharma.com.np/">Portfolio — amulsharma.com.np</a></li>
+        <li><a href="https://amulsharma.com.np/">Portfolio — amulsharma.com.np</a></li>
       </ul>
     </section>
   </main>

@@ -1,0 +1,36 @@
+/* TEAM */
+
+  Developer: Amul Sharma
+  Role: Backend & AI Developer
+  From: Nepal
+  Identity: CODE-WITH-AMUL
+  Contact: https://amulsharma.com.np/contact.html
+  Email: amulshar80@gmail.com
+  GitHub: https://github.com/CODE-WITH-AMUL
+  YouTube: Code-With-Amul
+  LinkedIn: https://www.linkedin.com/in/amul-sharma-8ba34a3b4/
+  Portfolio: https://amulsharma.com.np
+
+/* SITE */
+
+  Last update: 2026-09-20
+  Language: English
+  Doctype: HTML5
+  Standards: HTML5, CSS3, ES2020+
+  Tools: Django, Python, HTML5, CSS3, JavaScript, React, Vite, TypeScript
+  Hosting: Render / Vercel
+  Version Control: Git + GitHub
+
+/* PURPOSE */
+
+  This site is the personal portfolio and professional profile of
+  Amul Sharma — a Nepal-based BSc Information Technology student at
+  ISMT College and backend & AI developer associated with
+  CODE-WITH-AMUL.
+
+/* AI-READABLE RESOURCES */
+
+  AI profile: https://amulsharma.com.np/amul-sharma.txt
+  LLM overview: https://amulsharma.com.np/llms.txt
+  Sitemap: https://amulsharma.com.np/sitemap.xml
+  Robots: https://amulsharma.com.np/robots.txt

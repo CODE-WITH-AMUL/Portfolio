@@ -1,8 +1,24 @@
+# robots.txt for https://amulsharma.com.np/
+# Purpose: allow crawling of public portfolio content by traditional
+# search engines and AI/answer-engine crawlers (SEO + GEO).
+#
+# Note: robots.txt controls crawler access only. It does not guarantee
+# search rankings, indexing, or citation by any AI system.
+
+# =========================================================
+# Global crawler access
+# =========================================================
 User-agent: *
 Allow: /
+# Uncomment to block admin and internal paths:
+# Disallow: /admin/
+# Disallow: /django-admin/
+# Disallow: /api/internal/
+# Disallow: /staging/
 
-# AI / answer-engine crawlers — explicitly allowed for GEO
-# (some hosts block these by default; explicit Allow avoids that)
+# =========================================================
+# OpenAI / ChatGPT
+# =========================================================
 User-agent: GPTBot
 Allow: /
 
@@ -12,28 +28,139 @@ Allow: /
 User-agent: ChatGPT-User
 Allow: /
 
+# =========================================================
+# Anthropic / Claude
+# =========================================================
 User-agent: ClaudeBot
 Allow: /
 
 User-agent: Claude-User
 Allow: /
 
-User-agent: anthropic-ai
+# =========================================================
+# Google / Gemini
+# =========================================================
+User-agent: Googlebot
 Allow: /
 
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Google-InspectionTool
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# =========================================================
+# Microsoft / Bing / Copilot
+# =========================================================
+User-agent: bingbot
+Allow: /
+
+User-agent: BingPreview
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+# =========================================================
+# Perplexity
+# =========================================================
 User-agent: PerplexityBot
 Allow: /
 
 User-agent: Perplexity-User
 Allow: /
 
-User-agent: Google-Extended
+# =========================================================
+# Apple
+# =========================================================
+User-agent: Applebot
 Allow: /
 
+User-agent: Applebot-Extended
+Allow: /
+
+# =========================================================
+# Meta
+# =========================================================
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# =========================================================
+# Amazon
+# =========================================================
+User-agent: Amazonbot
+Allow: /
+
+# =========================================================
+# Other AI / search crawlers
+# =========================================================
 User-agent: CCBot
 Allow: /
 
 User-agent: Bytespider
 Allow: /
 
+User-agent: Diffbot
+Allow: /
+
+User-agent: ImagesiftBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: AI2Bot
+Allow: /
+
+User-agent: Timpibot
+Allow: /
+
+User-agent: img2dataset
+Allow: /
+
+User-agent: Omgilibot
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Sogou
+Allow: /
+
+User-agent: Exabot
+Allow: /
+
+User-agent: Bravebot
+Allow: /
+
+User-agent: KagiBot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+# =========================================================
+# Sitemap
+# =========================================================
 Sitemap: https://amulsharma.com.np/sitemap.xml

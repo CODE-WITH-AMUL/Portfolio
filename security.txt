@@ -1,0 +1,11 @@
+# security.txt for https://amulsharma.com.np/
+# Spec: https://www.rfc-editor.org/rfc/rfc9116
+# Generated: 2026-09-20
+
+Contact: mailto:contact@amulsharma.com.np
+Contact: mailto:amulshar80@gmail.com
+Expires: 2027-09-20T00:00:00.000Z
+Preferred-Languages: en, ne
+Canonical: https://amulsharma.com.np/.well-known/security.txt
+Policy: https://amulsharma.com.np/security-policy.html
+Acknowledgments: https://amulsharma.com.np/security-acknowledgments.html
